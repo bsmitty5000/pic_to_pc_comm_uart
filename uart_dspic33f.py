@@ -5,7 +5,7 @@ Testing out UART on dsPIC33f
 import serial
 import struct    
 
-ser = serial.Serial(port = '/dev/ttyUSB1', 
+ser = serial.Serial(port = '/dev/ttyUSB0', 
                     baudrate = 115200,
                     bytesize = 8,
                     parity = serial.PARITY_NONE,

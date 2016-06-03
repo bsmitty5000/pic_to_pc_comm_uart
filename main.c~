@@ -100,8 +100,8 @@ void __attribute__((__interrupt__, no_auto_psv)) _U1RXInterrupt(void)
 
 	// Clear interrupt flag
 	IFS0bits.U1RXIF = 0;
-    //let the main loop know we received a char
-    uart_rcvd = 1;
-    //load the char
-    uart_rcvd_char = U1RXREG;
+        //let the main loop know we received a char
+        uart_rcvd = 1;
+        //load the char
+        uart_rcvd_char = U1RXREG;
 }

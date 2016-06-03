@@ -49,5 +49,14 @@ void sendFloat(float data)
 	while(U1STAbits.TRMT == 0);
 	U1TXREG = myUnion.bytes[3];
 	while(U1STAbits.TRMT == 0);
+
+	/*U1TXREG = myUnion.bytes[3];
+	while(U1STAbits.TRMT == 0);
+	U1TXREG = myUnion.bytes[2];
+	while(U1STAbits.TRMT == 0);
+	U1TXREG = myUnion.bytes[1];
+	while(U1STAbits.TRMT == 0);
+	U1TXREG = myUnion.bytes[0];
+	while(U1STAbits.TRMT == 0);*/
 	
 }
